@@ -2,6 +2,8 @@
 https://developers.google.com/webmasters/ajax-crawling/docs/specification
 Section: Escaping characters in the bidirectional mapping
 
+See https://github.com/colons/pyfoot-plugins/blob/master/http.py ajax_url() for its use in context.
+
 """
 
 # Note: range(0,10) == [0,1,2,3,4,5,6,7,8,9], so all ranges are one over the spec's.
