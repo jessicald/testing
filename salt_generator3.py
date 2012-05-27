@@ -1,8 +1,8 @@
-#1/usr/bin/env python2.7
+#1/usr/bin/env python3.2
 from random import SystemRandom
 from sys import argv, stderr, exit
 
-__desc__ = 'This program prints a Python 2 string of random bytes useful for static cryptographic hash salts.'
+__desc__ = 'This program prints a Python 3 bytes object of random bytes useful for static cryptographic hash salts.'
 
 try:
     random_bits = int(argv[1])
@@ -32,4 +32,4 @@ def base256_encode(n, minwidth=0): # int/long to byte array
 
 generator = SystemRandom()
 arr = base256_encode(generator.getrandbits(random_bits))
-print repr(str(arr))
+print(repr(bytes(arr)))
