@@ -4,13 +4,14 @@ from sys import argv, stderr, exit
 
 __desc__ = 'This program prints a Python 2 string of random bytes useful for static cryptographic hash salts.'
 
+commonerr = '\n\n{0}\nusage: {1} INTEGER\n'.format(__desc__, argv[0])
 try:
     random_bits = int(argv[1])
 except IndexError:
-    stderr.write('error: requires a number of bits to generate\n\n%s\nusage: %s INTEGER\n' % (__desc__, argv[0]))
+    stderr.write('error: requires a number of bits to generate)' + commonerr)
     exit(1)
 except ValueError:
-    stderr.write('error: please enter a base 10 integer e.g. 256\n\n%s\nusage: %s INTEGER\n' % (__desc__, argv[0]))
+    stderr.write('error: please enter a base 10 integer e.g. 256' + commonerr)
     exit(2)
 
 # Thanks to http://stackoverflow.com/a/8734361
