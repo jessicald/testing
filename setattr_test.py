@@ -3,8 +3,8 @@ class Tricky():
     def __init__(self, update_with):
         self.integer = 5
         self.longstring = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.'
-        print('self.integer: %d' % self.integer)
-        print('self.longstring: ' + self.longstring)
+        print('self.integer = %d' % self.integer)
+        print('self.longstring = ' + self.longstring)
         print()
 
         # The first loop works with an iterable of 2-tuples, so if we get
