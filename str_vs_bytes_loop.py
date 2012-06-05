@@ -1,6 +1,5 @@
 from str_vs_bytes import string_memory
 from sys import argv, stdin
-from hurry import filesize
 
 def format_output(i, size_dict):
     output = 'At iteration %d with %s characters, the %s string is %.7f%% bigger which amounts to %d bytes.' % (
